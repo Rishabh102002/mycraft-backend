@@ -6,9 +6,9 @@ const config = require("./utils/config");
 // connect database
 console.log("connecting...");
 mongoose
-    .connect(config.MONGO_URI)
-    .then((res) => console.log("database connected..."))
-    .catch((err) => console.log(err));
+  .connect(config.MONGO_URI)
+  .then((res) => console.log("database connected..."))
+  .catch((err) => console.log(err));
 
 const PORT = config.PORT || 3000;
 
